@@ -57,6 +57,19 @@ Os dados são fictícios e foram criados apenas para fins educacionais e de port
 
 ---
 
+## Imagens
+
+PowerQuery
+![powerquery](https://github.com/user-attachments/assets/be6bcb3f-10c2-4408-9c18-996f588e02a8)
+
+Relacionamentos
+![relacionamentos](https://github.com/user-attachments/assets/24967673-aed4-4f6d-b424-4b0f4b879db8)
+
+Visão Geral do Dashboard
+![dashboard-visao-geral](https://github.com/user-attachments/assets/992cd41e-6723-4529-a07a-bb33e70699e2)
+
+---
+
 ## 👤 Autor
 Josimar dos Santos Junior  
 Analista de Dados   
