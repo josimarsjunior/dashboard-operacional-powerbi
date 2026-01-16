@@ -4,7 +4,7 @@ Este projeto utiliza um **modelo dimensional em estrela**, estruturado no Power 
 
 ---
 
-## 🧱 Visão Geral da Modelagem
+## Visão Geral da Modelagem
 
 O modelo é composto por:
 - 1 tabela fato central (`Fato_Processos`)
@@ -14,7 +14,7 @@ As dimensões fornecem contexto analítico aos registros operacionais armazenado
 
 ---
 
-## 📊 Tabela Fato
+## Tabela Fato
 
 ### Fato_Processos
 Tabela central do modelo, responsável por armazenar os registros operacionais dos processos.
@@ -30,7 +30,7 @@ A tabela fato não contém atributos textuais descritivos, evitando redundância
 
 ---
 
-## 🧩 Tabelas Dimensão
+## Tabelas Dimensão
 
 ### Dim_Tempo
 Tabela de datas utilizada para análises temporais dos processos.
@@ -73,7 +73,7 @@ Dimensão que representa as equipes responsáveis pelos processos.
 
 ---
 
-## 🔗 Relacionamentos
+## Relacionamentos
 
 Os relacionamentos seguem o padrão **1:N**, com as dimensões filtrando a tabela fato.
 
@@ -85,7 +85,7 @@ Os filtros são **unidirecionais**, evitando ambiguidades e melhorando a perform
 
 ---
 
-## 🎯 Boas Práticas Aplicadas
+## Boas Práticas Aplicadas
 - Modelo em estrela  
 - Separação clara entre fatos e dimensões  
 - Uso de chaves numéricas para relacionamento  
@@ -95,5 +95,5 @@ Os filtros são **unidirecionais**, evitando ambiguidades e melhorando a perform
 
 ---
 
-## 📌 Considerações Finais
+## Considerações Finais
 A modelagem adotada suporta análises operacionais e gerenciais, permitindo acompanhar o volume de processos, seus status, responsáveis e evolução ao longo do tempo de forma clara e eficiente.
