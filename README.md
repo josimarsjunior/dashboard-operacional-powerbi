@@ -30,7 +30,7 @@ Relacionamentos 1:N seguindo boas práticas de BI.
 
 ---
 
-## 📈 Principais Indicadores (KPIs)
+## Principais Indicadores (KPIs)
 - Total de Processos
 - Processos Concluídos
 - % de Processos Concluídos
@@ -38,13 +38,13 @@ Relacionamentos 1:N seguindo boas práticas de BI.
 
 --- 
 
-## 📚 Documentação Técnica
+## Documentação Técnica
 - 📄 [Medidas DAX](docs/dax.md)
 - 📄 [Modelo de Dados](docs/modelagem.md)
 
 ---
 
-## 📊 Visuais do Dashboard
+## Visuais do Dashboard
 - Processos por Status
 - Processos por Equipe
 - Evolução dos Processos ao Longo do Tempo
@@ -52,7 +52,7 @@ Relacionamentos 1:N seguindo boas práticas de BI.
 
 ---
 
-## 🌐 Acesso ao Dashboard (Power BI Service)
+## Acesso ao Dashboard (Power BI Service)
 🔗 **Link público:**   
 👉 [Porwer BI Service](https://app.powerbi.com/view?r=eyJrIjoiNTlmODg2ZmQtOWVkNy00MjhmLWI1NGMtNmRjNzI4NjZmMmFiIiwidCI6ImZlOWJlZjU5LTk2MTEtNGQ3NC1hMTY5LTAwMGRiYjUzYTg1ZiJ9)
 
@@ -76,7 +76,7 @@ Visão Geral do Dashboard
 
 ---
 
-## 👤 Autor
+## Autor
 Josimar dos Santos Junior  
 Analista de Dados   
 [LinkedIn](www.linkedin.com/in/josimarjunior)
