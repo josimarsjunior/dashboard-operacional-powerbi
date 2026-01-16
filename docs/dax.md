@@ -1,41 +1,43 @@
 # Medidas DAX – Dashboard Operacional
+
 Este documento reúne as principais medidas e colunas calculadas utilizadas no dashboard, com foco em métricas operacionais e indicadores de desempenho.
 
 ---
-  
+
 ## Total de Processos
 Conta o número total de processos registrados.
 
+DAX
 Total Processos =
 COUNT(Fato_Processos[ID_Processo])
 
----
-
 ## Processos Concluídos
-Filtra e contabiliza apenas os processos com status "Concluído".
+Filtra e contabiliza apenas os processos com status Concluído.
 
+DAX
+Copiar código
 Processos Concluídos =
 CALCULATE(
     [Total Processos],
     Dim_Status[Status] = "Concluído"
 )
 
----
-
 ## Processos Pendentes
 Retorna a quantidade de processos ainda não concluídos.
 
+DAX
+Copiar código
 Processos Pendentes =
 CALCULATE(
     [Total Processos],
     Dim_Status[Status] = "Pendente"
 )
 
----
-  
 ## Percentual de Processos Concluídos
-Indica a taxa de conclusão dos processos.
+Indica a taxa de conclusão dos processos em relação ao total.
 
+DAX
+Copiar código
 % Concluídos =
 IF(
     [Processos Concluídos] = 0,
@@ -43,19 +45,19 @@ IF(
     DIVIDE([Processos Concluídos], [Total Processos])
 )
 
----
-
 ## Tempo Médio de Conclusão
-Calcula o tempo médio, em dias, para finalização dos processos.
+Calcula o tempo médio, em dias, para a finalização dos processos concluídos.
 
+DAX
+Copiar código
 Tempo Médio de Conclusão =
 AVERAGE(Fato_Processos[Tempo_Conclusao_Dias])
 
----
-
 ## Coluna Calculada – Tempo de Conclusão
-Calcula o tempo entre abertura e conclusão do processo.
+Calcula o intervalo, em dias, entre a data de abertura e a data de conclusão do processo.
 
+DAX
+Copiar código
 Tempo_Conclusao_Dias =
 DATEDIFF(
     Fato_Processos[Data_Abertura],
@@ -63,11 +65,11 @@ DATEDIFF(
     DAY
 )
 
----
-
 ## Medida para Exibição Condicional
-Melhora a leitura da tabela ao tratar processos não concluídos.
+Melhora a leitura da tabela analítica ao tratar processos ainda não concluídos.
 
+DAX
+Copiar código
 Tempo Conclusão (Exibição) =
 VAR Tempo =
     SELECTEDVALUE(Fato_Processos[Tempo_Conclusao_Dias])
