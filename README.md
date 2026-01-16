@@ -79,4 +79,4 @@ Visão Geral do Dashboard
 ## Autor
 Josimar dos Santos Junior  
 Analista de Dados   
-[LinkedIn](www.linkedin.com/in/josimarjunior)
+[LinkedIn](https://www.linkedin.com/in/josimarjunior/)
