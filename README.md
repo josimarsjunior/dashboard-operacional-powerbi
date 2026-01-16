@@ -1,6 +1,6 @@
 # Dashboard Operacional – Power BI
 
-## 📊 Visão Geral
+## Visão Geral
 Dashboard operacional desenvolvido em Power BI com dados fictícios, focado no acompanhamento de processos por status, equipe e tempo de conclusão.
 
 O objetivo é demonstrar habilidades em:
@@ -11,7 +11,7 @@ O objetivo é demonstrar habilidades em:
 
 ---
 
-## 🔧 Ferramentas Utilizadas
+## Ferramentas Utilizadas
 - Power BI Desktop
 - Power Query (ETL)
 - DAX
@@ -19,7 +19,7 @@ O objetivo é demonstrar habilidades em:
 
 ---
 
-## 🧱 Modelo de Dados
+## Modelo de Dados
 Modelo em estrela com:
 - Fato_Processos
 - Dim_Status
@@ -35,6 +35,12 @@ Relacionamentos 1:N seguindo boas práticas de BI.
 - Processos Concluídos
 - % de Processos Concluídos
 - Tempo Médio de Conclusão (somente concluídos)
+
+--- 
+
+## 📚 Documentação Técnica
+- 📄 [Medidas DAX](docs/dax.md)
+- 📄 [Modelo de Dados](docs/modelagem.md)
 
 ---
 
@@ -59,10 +65,10 @@ Os dados são fictícios e foram criados apenas para fins educacionais e de port
 
 ## Imagens
 
-PowerQuery
-![powerquery](https://github.com/user-attachments/assets/be6bcb3f-10c2-4408-9c18-996f588e02a8)
+Power Query (ETL)
+![Capturar](https://github.com/user-attachments/assets/572a3a86-70e6-42a0-9966-e2bb538da4f5)
 
-Relacionamentos
+Modelo de Relacionamentos
 ![relacionamentos](https://github.com/user-attachments/assets/24967673-aed4-4f6d-b424-4b0f4b879db8)
 
 Visão Geral do Dashboard
