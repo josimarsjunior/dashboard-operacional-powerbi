@@ -16,7 +16,6 @@ COUNT(Fato_Processos[ID_Processo])
 Filtra e contabiliza apenas os processos com status Concluído.
 
 ```DAX
-Copiar código
 Processos Concluídos =
 CALCULATE(
     [Total Processos],
@@ -28,7 +27,6 @@ CALCULATE(
 Retorna a quantidade de processos ainda não concluídos.
 
 ```DAX
-Copiar código
 Processos Pendentes =
 CALCULATE(
     [Total Processos],
@@ -40,7 +38,6 @@ CALCULATE(
 Indica a taxa de conclusão dos processos em relação ao total.
 
 ```DAX
-Copiar código
 % Concluídos =
 IF(
     [Processos Concluídos] = 0,
@@ -53,7 +50,6 @@ IF(
 Calcula o tempo médio, em dias, para a finalização dos processos concluídos.
 
 ```DAX
-Copiar código
 Tempo Médio de Conclusão =
 AVERAGE(Fato_Processos[Tempo_Conclusao_Dias])
 ```
@@ -62,7 +58,6 @@ AVERAGE(Fato_Processos[Tempo_Conclusao_Dias])
 Calcula o intervalo, em dias, entre a data de abertura e a data de conclusão do processo.
 
 ```DAX
-Copiar código
 Tempo_Conclusao_Dias =
 DATEDIFF(
     Fato_Processos[Data_Abertura],
@@ -75,7 +70,6 @@ DATEDIFF(
 Melhora a leitura da tabela analítica ao tratar processos ainda não concluídos.
 
 ```DAX
-Copiar código
 Tempo Conclusão (Exibição) =
 VAR Tempo =
     SELECTEDVALUE(Fato_Processos[Tempo_Conclusao_Dias])
