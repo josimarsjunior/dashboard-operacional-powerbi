@@ -10,6 +10,7 @@ Conta o número total de processos registrados.
 ```DAX
 Total Processos =
 COUNT(Fato_Processos[ID_Processo])
+```
 
 ## Processos Concluídos
 Filtra e contabiliza apenas os processos com status Concluído.
@@ -21,6 +22,7 @@ CALCULATE(
     [Total Processos],
     Dim_Status[Status] = "Concluído"
 )
+```
 
 ## Processos Pendentes
 Retorna a quantidade de processos ainda não concluídos.
@@ -32,6 +34,7 @@ CALCULATE(
     [Total Processos],
     Dim_Status[Status] = "Pendente"
 )
+```
 
 ## Percentual de Processos Concluídos
 Indica a taxa de conclusão dos processos em relação ao total.
@@ -44,6 +47,7 @@ IF(
     0,
     DIVIDE([Processos Concluídos], [Total Processos])
 )
+```
 
 ## Tempo Médio de Conclusão
 Calcula o tempo médio, em dias, para a finalização dos processos concluídos.
@@ -52,6 +56,7 @@ Calcula o tempo médio, em dias, para a finalização dos processos concluídos.
 Copiar código
 Tempo Médio de Conclusão =
 AVERAGE(Fato_Processos[Tempo_Conclusao_Dias])
+```
 
 ## Coluna Calculada – Tempo de Conclusão
 Calcula o intervalo, em dias, entre a data de abertura e a data de conclusão do processo.
@@ -64,6 +69,7 @@ DATEDIFF(
     Fato_Processos[Data_Conclusão_Correta],
     DAY
 )
+```
 
 ## Medida para Exibição Condicional
 Melhora a leitura da tabela analítica ao tratar processos ainda não concluídos.
@@ -79,3 +85,4 @@ IF(
     "Não concluído",
     FORMAT(Tempo, "0") & " dias"
 )
+```
